@@ -6,6 +6,11 @@ A demo application to illustrate how Inertia.js works.
 
 ## Installation
 
+Update php version accordingly
+```sh
+git clone https://github.com/inertiajs/pingcrm.git pingcrm;cd pingcrm;composer install;npm ci;npm run dev;cp .env.example .env;php artisan key:generate;sudo apt install php*-sqlite3;touch database/database.sqlite;php artisan migrate;php artisan db:seed;php artisan serve;
+```
+
 Clone the repo locally:
 
 ```sh
@@ -44,6 +49,10 @@ php artisan key:generate
 ```
 
 Create an SQLite database. You can also use another database (MySQL, Postgres), simply update your configuration accordingly.
+
+```sh
+sudo apt install php*-sqlite3
+```
 
 ```sh
 touch database/database.sqlite
